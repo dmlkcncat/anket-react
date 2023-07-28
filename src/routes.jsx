@@ -12,6 +12,8 @@ const SurveyStatisticsPage = lazy(() => import('./pages/Survey/SurveyStatisticsP
 
 const AnswerCreatePage = lazy(() => import('./pages/Answer/AnswerCreatePage.jsx'))
 
+const UserDetail = lazy(() => import('./pages/RoomInformation/UserDetail'))
+
 /** @type {import('react-router-dom').RouteObject[]} */
 const routes = [
   {
@@ -62,6 +64,18 @@ const routes = [
             name: 'create',
             element: <AnswerCreatePage />,
             lazy: true,
+          },
+        ],
+      },
+      {
+        path: 'userDetail',
+        name: 'userDetail',
+        children: [
+          {
+            index: true,
+            element: <UserDetail />,
+            lazy: true,
+            auth: true,
           },
         ],
       },
