@@ -12,7 +12,7 @@ const SurveyStatisticsPage = lazy(() => import('./pages/Survey/SurveyStatisticsP
 
 const AnswerCreatePage = lazy(() => import('./pages/Answer/AnswerCreatePage.jsx'))
 
-const UserDetail = lazy(() => import('./pages/RoomInformation/UserDetail'))
+const UserDetail = lazy(() => import('./pages/PersonnelInformation/UserDetail'))
 
 /** @type {import('react-router-dom').RouteObject[]} */
 const routes = [
